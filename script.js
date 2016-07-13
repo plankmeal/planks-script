@@ -1,8 +1,8 @@
 /*
 
 Plank's Script
+
 Developer : @plankmeal
-TO BE UPDATED MORE AND MORE!
 
 */
 if (~window.location.host.indexOf("plug.dj")) {
@@ -72,8 +72,8 @@ if (~window.location.host.indexOf("plug.dj")) {
             API.chatLog("PONG! Working :)");
             break;
 
-        case "/commands": 
-            API.chatLog("");
+        case "/commands":
+            API.chatLog("All commands on the script's github: https://goo.gl/vxaDes");
             break;
         }
     }
