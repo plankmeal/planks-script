@@ -1,16 +1,8 @@
-/*
-
-Plank's Script
-
-Developer : @plankmeal
-
-*/
 if (~window.location.host.indexOf("plug.dj")) {
 
   $('body').append('<style> [data-cid^="15978109"] .msg .from .un { color: #42A5DC !important; } </style>');
-  $('#chat-messages').append('<div style="width:300px;height:35px;border-left:3px solid cyan;"</div><i style="width:33px;height:30px;margin-left:5px;" class="icon icon-site-logo"></i><div style="color:cyan;height:15px;padding-left:45px;padding-top:10px;">You are using Plank\'s script. - /cmds</div>');
-
-    var autoWoot = function () {
+$("#chat-messages").append('<div class="message"><div class="badge-box"><i class="icon" style="top: 2px; left: 2px; width: 26px; height: 26px; background-image: url(https://i.imgur.com/3w8xmog.png); background-size: 26px;"></i></div><div class="msg"><div class="from"><span class="un">Plank\'s Script</span></div><span class="text"><span style="color: rgb(209, 209, 209);">Plank\'s Script Activated!<br><span class="chat-text" style="color:cyan">Use "/commands" to see commands</span></span></span></div></div>')
+var autoWoot = function () {
         $("#woot").click();
     };
 
@@ -73,7 +65,7 @@ if (~window.location.host.indexOf("plug.dj")) {
             break;
 
         case "/commands":
-            API.chatLog("All commands on the script's github: https://goo.gl/vxaDes");
+            API.chatLog("All commands on the script's github:" + "https://goo.gl/vxaDes");
             break;
         }
     }
