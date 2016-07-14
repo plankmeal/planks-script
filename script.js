@@ -1,25 +1,27 @@
-if (~window.location.host.indexOf("plug.dj")) {
+/*
 
-  $('body').append('<style> [data-cid^="15978109"] .msg .from .un { color: #42A5DC !important; } </style>');
+Plank's Script
+
+Developer : @plankmeal
+
+*/
+if (~window.location.host.indexOf("plug.dj")) {
+//Script Activated msg
 $("#chat-messages").append('<div class="message"><div class="badge-box"><i class="icon" style="top: 2px; left: 2px; width: 26px; height: 26px; background-image: url(https://i.imgur.com/3w8xmog.png); background-size: 26px;"></i></div><div class="msg"><div class="from"><span class="un">Plank\'s Script</span></div><span class="text"><span style="color: rgb(209, 209, 209);">Plank\'s Script Activated!<br><span class="chat-text" style="color:cyan">Use "/commands" to see commands</span></span></span></div></div>')
+
 var autoWoot = function () {
         $("#woot").click();
     };
-
-    var autoGrab = function () {
+var autoGrab = function () {
         $("#grab").click();
         $($(".grab .menu ul li")[0]).mousedown();
     };
-
-    function userJoin(a) {
-        API.chatLog(a.username + " has just joined!");
-    }
-    API.on(API.USER_JOIN, userJoin);
 
 
     function chatCommands(a) {
         var b = a.split(" ");
         switch (b[0]) {
+
         case "/volume":
             API.setVolume(~~b[1]);
             break;
@@ -67,7 +69,17 @@ var autoWoot = function () {
         case "/commands":
             API.chatLog("All commands on the script's github:" + "https://goo.gl/vxaDes");
             break;
+        case "/rainbowfrog":
+            API>sendChat("http://i.imgur.com/5nWNhrv.gif")
+            break;
         }
     }
     API.on(API.CHAT_COMMAND, chatCommands);
+
+    function userJoin(a) {
+        API.chatLog(a.username + " has just joined!");
+    };
+    API.on(API.USER_JOIN, userJoin);
+
+
 } else alert("This script only functions at http://plug.dj/");
