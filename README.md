@@ -4,7 +4,7 @@
 Plank's Script Developed by @plankmeal
 
 
-`javascript:(function(){$.getScript('https://rawgit.com/plankmeal/planks-script/master/script.js');}());)`
+`javascript:(function(){$.getScript('https://rawgit.com/plankmeal/planks-script/master/script.js');}());`
 
 #Plank's Script Commands
 
