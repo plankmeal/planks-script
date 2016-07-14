@@ -11,3 +11,4 @@
 | /autograb on/off| Enables/disables auto grabbing.|
 |/autowoot on/off|Enables/disables auto wooting.|
 |/commands|Links you to this page.|
+|/rainbowfrog|http://i.imgur.com/5nWNhrv.gif|
