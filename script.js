@@ -70,7 +70,7 @@ var autoGrab = function () {
             API.chatLog("All commands on the script's github:" + "https://goo.gl/dQvdtU");
             break;
         case "/rainbowfrog":
-            API.sendChat("http://i.imgur.com/5nWNhrv.gif")
+            API.sendChat("http://i.imgur.com/5nWNhrv.gif");
             break;
         }
     }
