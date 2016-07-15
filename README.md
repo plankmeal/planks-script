@@ -23,4 +23,4 @@ Plank's Script Developed by @plankmeal
 
 **Note
 This is more of a personal project for myself to explore the website and enhance my programming skills. 
-I know that, the script is pretty bad, but with more practice and research it can be a damn good script. 
+I know that, the script is pretty bad, but with more practice and research it'll be a damn good script. 
