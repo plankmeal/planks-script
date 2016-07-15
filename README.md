@@ -19,7 +19,8 @@ Plank's Script Developed by @plankmeal
 | /autograb on/off| Enables/disables auto grabbing.|
 |/autowoot on/off|Enables/disables auto wooting.|
 |/commands|Links you to this page.|
-|/rainbowfrog|http://i.imgur.com/5nWNhrv.gif|
+|/afk|Enables afk mode (No custom msg yet.)|
+|/back|Disables afk mode.|
 
 **Note
 This is more of a personal project for myself to explore the website and enhance my programming skills. 
