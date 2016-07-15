@@ -17,11 +17,34 @@ var autoGrab = function () {
         $($(".grab .menu ul li")[0]).mousedown();
     };
 
+   var afkRes = "I'm AFK right now!"
+   var isAFK = false;
+   var msgBeenSent = false;
+   var afkRespond = function(data) {
+       if (data.type === 'mention' && data.message.indexOf('@' + API.getUser().username) > -1) {
+           if (isAFK === true && !msgBeenSent) {
+               msgBeenSent = true;
+               setTimeout(function() {
+                   msgBeenSent = false;
+               }, 30000);
+               API.sendChat('[AFK] ' + '@' + data.un + ' ' + afkRes);
+           }
+       }
+   }
+   API.on(API.CHAT, afkRespond)
+
 
     function chatCommands(a) {
         var b = a.split(" ");
         switch (b[0]) {
-
+        case "/afk":
+            isAFK = true;
+            API.sendChat(afkRes);
+            break;
+        case "/back":
+            isAFK = false;
+            API.chatLog("You're no longer afk!");
+            break;
         case "/volume":
             API.setVolume(~~b[1]);
             break;
@@ -61,7 +84,6 @@ var autoGrab = function () {
                 API.off("advance", autoWoot);
             }
             break;
-
         case "/ping":
             API.chatLog("PONG! Working :)");
             break;
