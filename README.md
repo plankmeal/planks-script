@@ -16,11 +16,14 @@ Plank's Script Developed by @plankmeal
 | /shrug        | `¯\_(ツ)_/¯`   |
 | /tableflip    | `(ノಠ益ಠ)ノ彡┻━┻ `|
 | /tablereset   | `┬──┬◡ﾉ(° -°ﾉ)` |
+|/sirflex|`ᕦ( - ̨ Θƪ )ᕤ`|
+|/feelingood|`~(˘▾˘~) Feelin' Good (~˘▾˘)~`|
 | /autograb on/off| Enables/disables auto grabbing.|
 |/autowoot on/off|Enables/disables auto wooting.|
 |/commands|Links you to this page.|
 |/afk|Enables afk mode (No custom msg yet.)|
 |/back|Disables afk mode.|
+
 
 **Note
 This is more of a personal project for myself to explore the website and enhance my programming skills. 
