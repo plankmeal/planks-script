@@ -49,22 +49,6 @@ var autoGrab = function () {
             API.setVolume(~~b[1]);
             break;
 
-        case "/lenny":
-            API.sendChat("( ͡° ͜ʖ ͡°)");
-            break;
-
-        case "/shrug":
-            API.sendChat("¯\\_(ツ)_/¯");
-            break;
-
-        case "/tableflip":
-            API.sendChat("(ノಠ益ಠ)ノ彡┻━┻");
-            break;
-
-        case "/tablereset":
-            API.sendChat("┬──┬◡ﾉ(° -°ﾉ)");
-            break;
-
         case "/autograb":
             if ("on" === b[1]) {
                 API.chatLog("AutoGrab enabled!");
@@ -84,15 +68,35 @@ var autoGrab = function () {
                 API.off("advance", autoWoot);
             }
             break;
-        case "/ping":
-            API.chatLog("PONG! Working :)");
-            break;
 
         case "/commands":
             API.chatLog("All commands on the script's github:" + "https://goo.gl/dQvdtU");
             break;
-        case "/rainbowfrog":
-            API.sendChat("http://i.imgur.com/5nWNhrv.gif");
+
+        case "/ping":
+            API.chatLog("PONG! Working :)");
+            break;
+
+        case "/lenny":
+            API.sendChat("( ͡° ͜ʖ ͡°)");
+            break;
+
+        case "/shrug":
+            API.sendChat("¯\\_(ツ)_/¯");
+            break;
+
+        case "/tableflip":
+            API.sendChat("(ノಠ益ಠ)ノ彡┻━┻");
+            break;
+
+        case "/tablereset":
+            API.sendChat("┬──┬◡ﾉ(° -°ﾉ)");
+            break;
+        case "/sirflex":
+            API.sendChat('ᕦ( - ̨ Θƪ )ᕤ');
+            break;
+        case "/feelingood":
+            API.sendChat("~(˘▾˘~) Feelin' Good (~˘▾˘)~")
             break;
         }
     }
